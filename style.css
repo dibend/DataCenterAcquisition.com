@@ -1,0 +1,58 @@
+/* General Styles */
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+h1, h2 {
+    color: #1a1a1a;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-color: #004085;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.cta-button {
+    padding: 12px 20px;
+    background-color: #fff;
+    color: #004085;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #d9d9d9;
+}
+
+/* Section Styles */
+section {
+    padding: 50px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #004085;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
