@@ -6,7 +6,23 @@ body {
   color: #333;
 }
 
-/* Slideshow container */
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-buttons .btn {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 12px;
+}
+
+/* Slideshow Container */
 .slideshow-container {
   max-width: 800px;
   position: relative;
@@ -25,55 +41,61 @@ body {
   display: none;
 }
 
-/* Next and Previous buttons */
+.active {
+  display: block;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+/* Next and previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
   padding: 16px;
-  margin-top: -22px;
   color: white;
   font-weight: bold;
   font-size: 18px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  transition: 0.6s ease;
+  border-radius: 3px;
   background-color: rgba(0,0,0,0.5);
 }
 
-/* Position "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.prev {
+  left: 0;
 }
 
-/* Dots/circles navigation */
+.next {
+  right: 0;
+}
+
+/* Dots for navigation */
 .dots {
   text-align: center;
-  margin-top: 10px;
+  padding: 10px 0;
 }
 
 .dot {
-  cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+  cursor: pointer;
   transition: background-color 0.6s ease;
 }
 
-.dot.active {
+.active, .dot:hover {
   background-color: #717171;
-}
-
-/* Fade effect for slides */
-.fade {
-  animation: fade 1.5s ease-in-out;
-}
-
-@keyframes fade {
-  from {opacity: 0.4}
-  to {opacity: 1}
 }
