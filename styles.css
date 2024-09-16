@@ -38,22 +38,15 @@ body {
 
 /* Hide all slides by default */
 .slide {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  transition: opacity 1.5s ease;  /* Smooth transition effect */
 }
 
+/* Active class to show the current slide */
 .active {
-  display: block;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from { opacity: 0.4; }
-  to { opacity: 1; }
+  opacity: 1;
 }
 
 /* Next and previous buttons */
