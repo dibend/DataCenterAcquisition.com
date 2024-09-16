@@ -3,21 +3,29 @@ document.addEventListener("DOMContentLoaded", function () {
   const slides = document.querySelectorAll('.slide');
   let currentSlide = 0;
 
-  // Display the first slide
-  slides[currentSlide].classList.add('active');
+  // Function to show the current slide and hide others
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      if (i === index) {
+        slide.classList.add('active');
+      }
+    });
+  }
+
+  // Display the first slide on page load
+  showSlide(currentSlide);
 
   // Function to show the next slide
   function showNextSlide() {
-    slides[currentSlide].classList.remove('active');
     currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].classList.add('active');
+    showSlide(currentSlide);
   }
 
   // Function to show the previous slide
   function showPrevSlide() {
-    slides[currentSlide].classList.remove('active');
     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    slides[currentSlide].classList.add('active');
+    showSlide(currentSlide);
   }
 
   // Add event listeners to the next and previous buttons
