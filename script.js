@@ -6,9 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
   // Function to show the current slide and hide others
   function showSlide(index) {
     slides.forEach((slide, i) => {
-      slide.classList.remove('active');
+      slide.style.opacity = '0';  // Hide all slides initially
+      slide.style.visibility = 'hidden';
       if (i === index) {
-        slide.classList.add('active');
+        slide.style.opacity = '1';  // Show the active slide
+        slide.style.visibility = 'visible';
       }
     });
   }
