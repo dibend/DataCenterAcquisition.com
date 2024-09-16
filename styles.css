@@ -90,16 +90,18 @@ body {
   height: auto;
   border-radius: 10px;
   margin-bottom: 20px;
+  max-height: 1080px;  /* Ensure the image does not exceed 1080px height */
+  object-fit: contain;  /* Preserve aspect ratio */
 }
 
 .slide-navigation {
-  margin-top: 30px;
+  margin-top: 20px;
   z-index: 10; /* Ensure buttons are on top */
   position: relative;
 }
 
 button#prevSlide, button#nextSlide {
-  margin: 0 20px;
+  margin: 0 10px;
   border-radius: 12px;
 }
 
