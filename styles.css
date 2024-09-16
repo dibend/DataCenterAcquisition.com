@@ -144,3 +144,20 @@ body {
   background-color: #005bb5;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+
+  /* Stack buttons vertically on mobile */
+  .contact-links .btn {
+    width: 100%; /* Full width on mobile */
+    margin: 10px 0; /* Vertical margin to prevent overlap */
+  }
+
+  /* Position navigation arrows over the images */
+  .prev, .next {
+    top: 50%; /* Position over the image, not the text */
+    padding: 10px; /* Reduce padding on mobile */
+    font-size: 16px; /* Smaller arrows on mobile */
+  }
+}
