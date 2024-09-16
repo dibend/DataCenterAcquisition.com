@@ -140,11 +140,6 @@ body {
   text-decoration: none;
 }
 
-.contact-links .btn:hover {
-  background-color: #005bb5;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
 /* Mobile Optimizations */
 @media (max-width: 768px) {
 
@@ -152,7 +147,9 @@ body {
   .contact-links .btn {
     display: block; /* Make buttons stack */
     width: 100%;    /* Full width on mobile */
+    max-width: 100%; /* Prevent overflow beyond screen */
     margin: 10px 0; /* Vertical margin to prevent overlap */
+    box-sizing: border-box; /* Ensure padding is included in width */
   }
 
   /* Position navigation arrows over the images */
