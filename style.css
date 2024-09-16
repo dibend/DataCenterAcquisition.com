@@ -6,7 +6,6 @@ body {
   color: #333;
 }
 
-/* Hero Section */
 .hero {
   height: 100vh;
   background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
@@ -40,20 +39,52 @@ body {
   color: white;
 }
 
-/* About Section */
-#about {
-  text-align: center;
-  background-color: #fff;
+/* Elevator Pitch Section */
+#elevator-pitch {
+  background-color: #f9f9f9;
+  padding: 60px 0;
 }
 
-#about h2 {
+#elevator-pitch h2 {
+  font-size: 2rem;
   color: #1a1a1a;
   margin-bottom: 20px;
 }
 
-#about p {
-  font-size: 1.1rem;
+#elevator-pitch p {
+  font-size: 1.2rem;
   color: #555;
+}
+
+/* Financing Section */
+#financing {
+  background-color: #fff;
+}
+
+#animation-area {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* SVG Styles */
+.svg-container {
+  max-width: 100%;
+  height: auto;
+}
+
+.equity-flow, .debt-flow {
+  opacity: 0;
+}
+
+.datacenter {
+  opacity: 0;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #ccc;
 }
 
 /* Contact Section */
@@ -81,10 +112,4 @@ body {
 
 .contact-links .btn:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Footer */
-footer {
-  background-color: #222;
-  color: #ccc;
 }
