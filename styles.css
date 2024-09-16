@@ -64,10 +64,18 @@ body {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   background-color: #f9f9f9;
   border-radius: 12px;
+  text-align: center;
 }
 
 .slide.active {
   display: block;
+}
+
+.slide-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 button {
