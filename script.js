@@ -1,36 +1,34 @@
-// JavaScript for Slide Deck functionality
-document.addEventListener("DOMContentLoaded", function () {
-  const slides = document.querySelectorAll('.slide');
-  let currentSlide = 0;
+let slideIndex = 1;
+showSlides(slideIndex);
 
-  // Function to show the current slide and hide others
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.style.opacity = '0';  // Hide all slides initially
-      slide.style.visibility = 'hidden';
-      if (i === index) {
-        slide.style.opacity = '1';  // Show the active slide
-        slide.style.visibility = 'visible';
-      }
-    });
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Current slide controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+// Show the slide based on the current index
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slide");
+  let dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+
+  // Hide all slides and deactivate all dots
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
   }
 
-  // Display the first slide on page load
-  showSlide(currentSlide);
-
-  // Function to show the next slide
-  function showNextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-  }
-
-  // Function to show the previous slide
-  function showPrevSlide() {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    showSlide(currentSlide);
-  }
-
-  // Add event listeners to the next and previous buttons
-  document.getElementById('nextSlide').addEventListener('click', showNextSlide);
-  document.getElementById('prevSlide').addEventListener('click', showPrevSlide);
-});
+  // Show the current slide and highlight the active dot
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
