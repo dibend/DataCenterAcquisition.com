@@ -1,17 +1,26 @@
-// Wait for DOM content to be fully loaded
+// JavaScript for Slide Deck functionality
 document.addEventListener("DOMContentLoaded", function () {
-  
-  // GSAP Animation Timeline
-  const timeline = gsap.timeline({ defaults: { duration: 2, ease: "power2.out" } });
+  const slides = document.querySelectorAll('.slide');
+  let currentSlide = 0;
 
-  // Animate Equity and Debt Flows coming in
-  timeline.fromTo(".equity-flow", { opacity: 0, x: -100 }, { opacity: 1, x: 0 }, "+=0.5");
-  timeline.fromTo(".debt-flow", { opacity: 0, y: -100 }, { opacity: 1, y: 0 }, "-=1.5");
+  // Display the first slide
+  slides[currentSlide].classList.add('active');
 
-  // Animate Data Centers appearing after flows
-  timeline.fromTo(".datacenter", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, stagger: 0.3 });
+  // Function to show the next slide
+  function showNextSlide() {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+  }
 
-  // Text Animations for Equity and Debt Labels
-  timeline.fromTo(".equity-text", { opacity: 0, x: -50 }, { opacity: 1, x: 0 }, "-=1");
-  timeline.fromTo(".debt-text", { opacity: 0, y: -50 }, { opacity: 1, y: 0 }, "-=1");
+  // Function to show the previous slide
+  function showPrevSlide() {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    slides[currentSlide].classList.add('active');
+  }
+
+  // Add event listeners to the next and previous buttons
+  document.getElementById('nextSlide').addEventListener('click', showNextSlide);
+  document.getElementById('prevSlide').addEventListener('click', showPrevSlide);
 });
