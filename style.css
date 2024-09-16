@@ -1,6 +1,6 @@
 /* Base Styles */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Segoe UI', Roboto, "Helvetica Neue", Arial, sans-serif;
   background-color: #f9f9f9;
   margin: 0;
   color: #333;
@@ -8,14 +8,14 @@ body {
 
 .hero {
   height: 100vh;
-  background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .hero h1 {
-  color: #333;
+  color: #1a1a1a;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -39,77 +39,47 @@ body {
   color: white;
 }
 
-/* Elevator Pitch Section */
-#elevator-pitch {
-  background-color: #f9f9f9;
+/* Slide Deck Section */
+#slidedeck {
+  background-color: #ffffff;
   padding: 60px 0;
 }
 
-#elevator-pitch h2 {
-  font-size: 2rem;
-  color: #1a1a1a;
-  margin-bottom: 20px;
-}
-
-#elevator-pitch p {
-  font-size: 1.2rem;
-  color: #555;
-}
-
-/* Financing Section */
-#financing {
-  background-color: #fff;
-}
-
-#animation-area {
+.slide-container {
   position: relative;
-  max-width: 500px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
-/* SVG Styles */
-.svg-container {
-  max-width: 100%;
-  height: auto;
+.slides {
+  position: relative;
+  overflow: hidden;
 }
 
-.equity-flow, .debt-flow {
-  opacity: 0;
+.slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+  padding: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  border-radius: 12px;
 }
 
-.datacenter {
-  opacity: 0;
+.slide.active {
+  display: block;
 }
 
-/* Footer */
+button {
+  margin-top: 30px;
+}
+
+button#prevSlide, button#nextSlide {
+  margin: 0 20px;
+  border-radius: 12px;
+}
+
 footer {
   background-color: #222;
   color: #ccc;
-}
-
-/* Contact Section */
-#contact {
-  background-color: #f4f4f4;
-}
-
-#contact h2 {
-  color: #1a1a1a;
-}
-
-#contact p {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
-}
-
-.contact-links .btn {
-  width: 160px;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 12px;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-}
-
-.contact-links .btn:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
