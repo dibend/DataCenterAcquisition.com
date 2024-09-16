@@ -150,7 +150,8 @@ body {
 
   /* Stack buttons vertically on mobile */
   .contact-links .btn {
-    width: 100%; /* Full width on mobile */
+    display: block; /* Make buttons stack */
+    width: 100%;    /* Full width on mobile */
     margin: 10px 0; /* Vertical margin to prevent overlap */
   }
 
