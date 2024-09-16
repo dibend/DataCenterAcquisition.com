@@ -39,8 +39,8 @@ body {
 /* Slideshow Container */
 .slideshow-container {
   max-width: 800px;
-  margin: 0 auto;
   position: relative;
+  margin: 0 auto;
   padding-bottom: 50px; /* Ensure space between slideshow and contact section */
 }
 
