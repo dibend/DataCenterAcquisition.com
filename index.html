@@ -4,102 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Data Center Acquisition - Investor Deck</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Data Center Acquisition - Slideshow</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Hero Section with Apple-Style "View the Presentation" Button -->
-  <section class="hero d-flex align-items-center text-center">
-    <div class="container">
-      <h1 class="display-4 fw-bold">Data Center Acquisition</h1>
-      <p class="lead">Accelerating Computing in Crypto, AI, and Cloud Rental Markets</p>
-      <div class="hero-buttons mt-4">
-        <a href="#slidedeck" class="btn apple-btn-lg">View the Presentation</a>
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+    
+    <!-- Slide 1 -->
+    <div class="slide fade">
+      <img src="images/technology_servers.jpg" class="slide-image" alt="Technology Servers">
+      <div class="slide-navigation">
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
       </div>
+      <h3>Problem: Exponential Demand for Computing Power</h3>
+      <p>The global economy is rapidly shifting towards decentralized technologies and on-demand cloud services...</p>
     </div>
-  </section>
 
-  <!-- Professional Slide Deck Section -->
-  <section id="slidedeck" class="container text-center py-5">
-    <div class="slide-container">
-      <div class="slides">
-        <!-- Slide 1: Problem Statement -->
-        <div class="slide" id="slide-1">
-          <img src="images/technology_servers.jpg" class="slide-image" alt="Technology Servers">
-          <div class="slide-navigation">
-            <button class="btn btn-outline-primary btn-lg" id="prevSlide">Previous</button>
-            <button class="btn btn-primary btn-lg" id="nextSlide">Next</button>
-          </div>
-          <h3 class="fw-bold">Problem: Exponential Demand for Computing Power</h3>
-          <p>The global economy is rapidly shifting towards decentralized technologies, AI-driven insights, and on-demand cloud services. Yet, current infrastructure is unable to meet the growing computational demands efficiently.</p>
-        </div>
-
-        <!-- Slide 2: Vision and Opportunity -->
-        <div class="slide" id="slide-2">
-          <img src="images/ai_cloud.jpg" class="slide-image" alt="AI and Cloud">
-          <div class="slide-navigation">
-            <button class="btn btn-outline-primary btn-lg" id="prevSlide">Previous</button>
-            <button class="btn btn-primary btn-lg" id="nextSlide">Next</button>
-          </div>
-          <h3 class="fw-bold">Our Vision: The Intersection of Crypto, AI, and Cloud</h3>
-          <p>We are acquiring data centers to meet the rising demand for accelerated computing in blockchain technologies, AI, and cloud platforms.</p>
-        </div>
-
-        <!-- Slide 3: Crypto Market Opportunity -->
-        <div class="slide" id="slide-3">
-          <img src="images/crypto_blockchain.jpg" class="slide-image" alt="Crypto Blockchain">
-          <div class="slide-navigation">
-            <button class="btn btn-outline-primary btn-lg" id="prevSlide">Previous</button>
-            <button class="btn btn-primary btn-lg" id="nextSlide">Next</button>
-          </div>
-          <h3 class="fw-bold">Accelerating Crypto Mining and Blockchain Validation</h3>
-          <p>Our optimized data centers handle intensive blockchain operations, including transaction validation and crypto mining, capitalizing on decentralized finance (DeFi) and NFTs.</p>
-        </div>
-
-        <!-- Slide 4: AI Computing Power -->
-        <div class="slide" id="slide-4">
-          <img src="images/ai_computing.jpg" class="slide-image" alt="AI Computing Power">
-          <div class="slide-navigation">
-            <button class="btn btn-outline-primary btn-lg" id="prevSlide">Previous</button>
-            <button class="btn btn-primary btn-lg" id="nextSlide">Next</button>
-          </div>
-          <h3 class="fw-bold">Unleashing AI Computing Power</h3>
-          <p>Our data centers support the accelerated computing needs of AI, powering large-scale models and deep learning algorithms.</p>
-        </div>
-
-        <!-- Slide 5: Cloud Rental Strategy -->
-        <div class="slide" id="slide-5">
-          <img src="images/cloud_servers.jpg" class="slide-image" alt="Cloud Servers">
-          <div class="slide-navigation">
-            <button class="btn btn-outline-primary btn-lg" id="prevSlide">Previous</button>
-            <button class="btn btn-primary btn-lg" id="nextSlide">Next</button>
-          </div>
-          <h3 class="fw-bold">Scalable Cloud Rental Services</h3>
-          <p>Our cloud rental strategy allows companies to scale their computing power on demand, providing flexibility and cost savings.</p>
-        </div>
+    <!-- Slide 2 -->
+    <div class="slide fade">
+      <img src="images/ai_cloud.jpg" class="slide-image" alt="AI and Cloud">
+      <div class="slide-navigation">
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
       </div>
+      <h3>Vision: The Intersection of Crypto, AI, and Cloud</h3>
+      <p>We are acquiring data centers to meet the rising demand for accelerated computing...</p>
     </div>
-  </section>
 
-  <!-- Contact Section with Apple-Style Buttons -->
-  <section id="contact" class="container text-center py-5">
-    <h2 class="fw-semibold">Get in Touch</h2>
-    <p class="lead">For inquiries, contact us directly:</p>
-    <div class="contact-links d-flex justify-content-center py-3">
-      <a href="mailto:david@njwebsolutions.net" class="btn apple-btn-lg">Email Us</a>
-      <a href="sms:+19085776850" class="btn apple-btn-lg">Text Us</a>
-      <a href="tel:+19085776850" class="btn apple-btn-lg">Call Us</a>
+    <!-- Slide 3 -->
+    <div class="slide fade">
+      <img src="images/crypto_blockchain.jpg" class="slide-image" alt="Crypto Mining">
+      <div class="slide-navigation">
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+      </div>
+      <h3>Accelerating Crypto Mining and Blockchain Validation</h3>
+      <p>Our optimized data centers handle intensive blockchain operations...</p>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="text-center py-4 bg-dark text-light">
-    <p>&copy; 2024 Data Center Acquisition. All rights reserved.</p>
-  </footer>
+    <!-- Dots for navigation -->
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    
+  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Script -->
   <script src="script.js"></script>
 </body>
 </html>
