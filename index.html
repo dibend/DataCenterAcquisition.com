@@ -6,6 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Data Center Acquisition - Investor Deck</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Responsive iframe container */
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+    }
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
 </head>
 <body>
 
@@ -79,17 +96,19 @@
         <p>Our cloud rental strategy allows companies to scale their computing power on demand, providing flexibility and cost savings.</p>
       </div>
 
-      <!-- New Slide 6 with YouTube Video -->
+      <!-- Slide 6 with Google Data Center Tour -->
       <div class="slide fade">
         <div class="slide-navigation">
           <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
           <button class="next" onclick="plusSlides(1)">&#10095;</button>
         </div>
-        <h3 class="fw-bold">Data Center Trends</h3>
-        <p>Watch this video on the latest data center trends and insights.</p>
+        <h3 class="fw-bold">Google Data Center 360° Tour</h3>
+        <p>Take a virtual tour of a Google data center and explore its cutting-edge infrastructure.</p>
         
-        <!-- Embed YouTube video -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/wmUrGBMeKHE?si=a2AeHnwmvOSw4MpV" title="Data Center Growth Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- Responsive iframe container -->
+        <div class="iframe-container">
+          <iframe src="https://www.youtube.com/embed/zDAYZU4A3w0" title="Google Data Center 360° Tour" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
 
       <!-- Dots for navigation (add more for the new slide) -->
