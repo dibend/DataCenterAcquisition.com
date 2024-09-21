@@ -8,7 +8,8 @@ body {
 
 /* Hero Section */
 .hero {
-  height: 100vh;
+  height: auto; /* Change this from 100vh to auto */
+  min-height: 100vh; /* Maintain full-screen height if needed */
   background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
   display: flex;
   justify-content: center;
@@ -161,7 +162,7 @@ body {
 
 /* Limit the size of the dc.png image */
 .hero img {
-  max-width: 800px; /* Set a maximum width */
-  width: 100%;      /* Ensure it scales down on smaller screens */
-  height: auto;     /* Maintain aspect ratio */
+  max-width: 800px !important;
+  width: 100% !important;
+  height: auto !important;
 }
