@@ -158,3 +158,10 @@ body {
     font-size: 16px;
   }
 }
+
+/* Limit the size of the dc.png image */
+.hero img {
+  max-width: 800px; /* Set a maximum width */
+  width: 100%;      /* Ensure it scales down on smaller screens */
+  height: auto;     /* Maintain aspect ratio */
+}
