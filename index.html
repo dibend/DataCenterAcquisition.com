@@ -9,6 +9,18 @@
 </head>
 <body>
 
+  <!-- Hero Section with Embedded Image and Presentation Button -->
+  <section class="hero d-flex align-items-center text-center">
+    <div class="container">
+      <img src="images/dc.png" alt="Data Center Image" style="max-width: 100%; height: auto;">
+      <h1 class="display-4 fw-bold">Data Center Acquisition</h1>
+      <p class="lead">Strategic Investment Opportunity in AI, Crypto, and Cloud Infrastructure</p>
+      <div class="hero-buttons mt-4">
+        <a href="#slidedeck" class="btn apple-btn-lg">View the Offering</a>
+      </div>
+    </div>
+  </section>
+
   <!-- Slideshow Section -->
   <section id="slidedeck" class="container text-center py-5">
     <div class="slideshow-container">
@@ -48,14 +60,42 @@
         <p>We will offer cloud rental services that provide flexible, scalable solutions for companies seeking additional computing power on demand. Our model allows businesses to expand their resources without committing to long-term infrastructure investments.</p>
       </div>
 
-      <!-- Slide 6: AI Infrastructure -->
+      <!-- Slide 6 with CNBC Video -->
       <div class="slide fade">
-        <img src="images/ai_infrastructure.jpg" class="slide-image" alt="AI Infrastructure">
-        <h3 class="fw-bold">AI Infrastructure and Hardware Retention</h3>
-        <p>The sporadic demand for AI infrastructure requires excess capacity to handle peak workloads. With Moore's Law slowing down, hardware retains more value over time. Our data centers will utilize advanced software that dynamically adjusts crypto mining operations to maintain stable energy loads, optimizing operational efficiency.</p>
+        <div class="slide-navigation">
+          <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+          <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+        <h3 class="fw-bold">Data Center Market Trends</h3>
+        <p>CNBC discusses the latest data center stocks and trends shaping the industry.</p>
+        <div class="iframe-container">
+          <iframe src="https://www.youtube.com/embed/wmUrGBMeKHE" title="CNBC Data Center Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
 
-      <!-- Slide 7: Team Section -->
+      <!-- Slide 7 with Google Data Center Tour -->
+      <div class="slide fade">
+        <div class="slide-navigation">
+          <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+          <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+        <h3 class="fw-bold">Google Data Center 360° Tour</h3>
+        <p>Take a virtual tour of a Google data center and explore its cutting-edge infrastructure.</p>
+        <div class="iframe-container">
+          <iframe src="https://www.youtube.com/embed/zDAYZU4A3w0" title="Google Data Center 360° Tour" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- Slide 8: AI Servers -->
+      <div class="slide fade">
+        <h3 class="fw-bold">NVIDIA AI Server Review</h3>
+        <p>Check out a review of the latest NVIDIA-powered AI servers, showcasing their potential for AI workloads.</p>
+        <div class="iframe-container">
+          <iframe src="https://www.youtube.com/embed/2FV5zHO1z1M" title="8x NVIDIA Tesla V100 Server Review" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- Slide 9: Team Section -->
       <div class="slide fade">
         <h3 class="fw-bold">Meet the Team</h3>
         <p><strong>Lou DiBenedetto</strong> - CEO <br><a href="https://www.linkedin.com/in/loudibenedetto/" target="_blank">LinkedIn</a></p>
@@ -72,6 +112,8 @@
         <span class="dot" onclick="currentSlide(5)"></span>
         <span class="dot" onclick="currentSlide(6)"></span>
         <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
       </div>
 
     </div>
